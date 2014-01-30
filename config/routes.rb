@@ -1,4 +1,6 @@
 Pinteresting::Application.routes.draw do
+  resources :pins
+
   devise_for :users
   #devise_for :installs <! -- commented out to install devise correctly -->
   root "pages#home"
