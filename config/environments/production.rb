@@ -82,6 +82,7 @@ Pinteresting::Application.configure do
   # note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'http://samcro82app.herokuapp.com/' }
 
+  # Sets Paperclip to uplaod images to Amzon S3
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
