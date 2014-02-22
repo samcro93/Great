@@ -84,11 +84,13 @@ Pinteresting::Application.configure do
 
   # Sets Paperclip to uplaod images to Amzon S3
   config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_credentials => {
-      :bucket => ENV ['AWS_BUCKET'],
+  :storage => :s3,
+  :s3_credentials => {
+      :bucket => ENV['PinterestingTrial'],
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
   }
 end
+  
+

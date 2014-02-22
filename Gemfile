@@ -15,6 +15,7 @@ gem 'aws-sdk', '~> 1.20.0'
 
 group :development, :test do
 		gem 'sqlite3'
+		gem "debugger"
 	end
 
 group :production do
